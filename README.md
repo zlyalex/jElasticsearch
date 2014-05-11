@@ -36,7 +36,7 @@ org.elasticsearch.Client client = es.client();
 
 //now use client as Elasticsearch Java API documentation says, for example:
 CreateIndexRequestBuilder request = client.admin().indices().prepareCreate("testindex");
-CreateIndexResponse response = createIndexRequestBuilder.execute().actionGet();
+CreateIndexResponse response = request.execute().actionGet();
 
 es.close(); //close connection and release resources
 ```
