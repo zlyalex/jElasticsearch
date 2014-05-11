@@ -14,16 +14,19 @@ jElasticsearch provides predefined ways to work with Elasticsearch:
 
 Every type of ES connectivity has its own Maven artifact to maintain dependencies properly.
 
-Use
-```Java
+Import package:
+```
 import com.sproutigy.commons.jelasticsearch.client.*;
+```
+
+Use embedded engine:
+```Java
 ElasticsearchEmbedded es = new ElasticsearchEmbedded();
 es.setPersistent(false); //keep documents in memory, do not store them
 ```
 
-or:
+or transport client:
 ```Java
-import com.sproutigy.commons.jelasticsearch.client.*;
 ElasticsearchTransport es = new ElasticsearchTransport();
 es.setClusterName("myservice");
 es.addTransportAddress("esindex.myservice.com");
