@@ -10,7 +10,7 @@ Connectivity (clients)
 jElasticsearch provides predefined ways to work with Elasticsearch cluster:
 - **ElasticsearchTransport** - transport client, does not join the cluster, have less dependencies than other
 - **ElasticsearchNode** - node client, joins the cluster (fully aware of the cluster infrastructure) and works as a non-data node
-- - **ElasticsearchDataNode** - node client, joins the cluster and works as a data node storing the data
+- **ElasticsearchDataNode** - node client, joins the cluster and works as a data node storing the data
 - **ElasticsearchEmbedded** - data node with local (JVM class loader) discovery and transport, self-running service
 
 Every type of ES connectivity has its own Maven artifact to maintain dependencies properly.
@@ -54,7 +54,7 @@ http://www.elasticsearch.org/guide/en/elasticsearch/client/java-api/current/inde
 
 TODO
 --------------
-jElasticsearch will soon provide object-oriented JSON builders for search queries and mappings.
+jElasticsearch will soon provide object-oriented JSON mappings builder.
 
 
 Maven
