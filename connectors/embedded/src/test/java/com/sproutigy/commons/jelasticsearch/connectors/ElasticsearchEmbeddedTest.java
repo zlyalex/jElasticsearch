@@ -1,4 +1,4 @@
-package com.sproutigy.commons.jelasticsearch.client;
+package com.sproutigy.commons.jelasticsearch.connectors;
 
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;

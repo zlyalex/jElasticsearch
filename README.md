@@ -21,7 +21,7 @@ For connectivity to external data servers, use ElasticsearchTransport or Elastic
 
 Import package:
 ```
-import com.sproutigy.commons.jelasticsearch.client.*;
+import com.sproutigy.commons.jelasticsearch.connectors.*;
 ```
 
 Use embedded engine:
