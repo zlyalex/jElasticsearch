@@ -18,6 +18,7 @@
         <module>node</module>
         <module>datanode</module>
         <module>embedded</module>
+        <module>all</module>
     </modules>
 
 </project>

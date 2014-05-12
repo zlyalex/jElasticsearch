@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="client-core" />
         <module name="client-transport" />
+        <module name="connectors-all" />
         <module name="connectors-core" />
         <module name="connectors-datanode" />
         <module name="connectors-embedded" />
@@ -63,6 +64,7 @@
       <module name="client-node" target="1.7" />
       <module name="client-transport" target="1.7" />
       <module name="connectors" target="1.7" />
+      <module name="connectors-all" target="1.7" />
       <module name="connectors-core" target="1.7" />
       <module name="connectors-datanode" target="1.7" />
       <module name="connectors-embedded" target="1.7" />

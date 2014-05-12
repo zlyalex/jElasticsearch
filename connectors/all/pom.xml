@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jelasticsearch-connectors</artifactId>
+        <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+        <version>1.1.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jelasticsearch-connectors-all</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+            <artifactId>jelasticsearch-connectors-core</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+            <artifactId>jelasticsearch-connectors-transport</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+            <artifactId>jelasticsearch-connectors-node</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+            <artifactId>jelasticsearch-connectors-datanode</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+            <artifactId>jelasticsearch-connectors-embedded</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+    </dependencies>
+</project>
