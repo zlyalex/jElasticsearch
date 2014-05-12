@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="client-core" />
+        <module name="client-transport" />
+        <module name="connectors-core" />
+        <module name="connectors-datanode" />
+        <module name="connectors-embedded" />
+        <module name="connectors-node" />
+        <module name="connectors-transport" />
+        <module name="jelasticsearch-mapping" />
+        <module name="jsonbuilder" />
+        <module name="mapping" />
+      </profile>
+      <profile default="false" name="Annotation profile for client-datanode" enabled="true">
+        <sourceOutputDir name="..\..\client\datanode\target\generated-sources\annotations" />
+        <sourceTestOutputDir name="..\..\client\datanode\target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="client-datanode" />
+      </profile>
+      <profile default="false" name="Annotation profile for client-node" enabled="true">
+        <sourceOutputDir name="..\..\client\node\target\generated-sources\annotations" />
+        <sourceTestOutputDir name="..\..\client\node\target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="client-node" />
+      </profile>
+      <profile default="false" name="Annotation profile for client-embedded" enabled="true">
+        <sourceOutputDir name="..\..\client\embedded\target\generated-sources\annotations" />
+        <sourceTestOutputDir name="..\..\client\embedded\target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="client-embedded" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="client" target="1.7" />
+      <module name="client-core" target="1.7" />
+      <module name="client-datanode" target="1.7" />
+      <module name="client-embedded" target="1.7" />
+      <module name="client-node" target="1.7" />
+      <module name="client-transport" target="1.7" />
+      <module name="connectors" target="1.7" />
+      <module name="connectors-core" target="1.7" />
+      <module name="connectors-datanode" target="1.7" />
+      <module name="connectors-embedded" target="1.7" />
+      <module name="connectors-node" target="1.7" />
+      <module name="connectors-transport" target="1.7" />
+      <module name="jElasticsearch" target="1.7" />
+      <module name="mapping" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
+

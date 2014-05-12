@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/connectors/connectors.iml" filepath="$PROJECT_DIR$/connectors/connectors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectors/core/connectors-core.iml" filepath="$PROJECT_DIR$/connectors/core/connectors-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectors/datanode/connectors-datanode.iml" filepath="$PROJECT_DIR$/connectors/datanode/connectors-datanode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectors/embedded/connectors-embedded.iml" filepath="$PROJECT_DIR$/connectors/embedded/connectors-embedded.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectors/node/connectors-node.iml" filepath="$PROJECT_DIR$/connectors/node/connectors-node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectors/transport/connectors-transport.iml" filepath="$PROJECT_DIR$/connectors/transport/connectors-transport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jElasticsearch.iml" filepath="$PROJECT_DIR$/jElasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mapping/mapping.iml" filepath="$PROJECT_DIR$/mapping/mapping.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -4,18 +4,20 @@ jElasticsearch
 jElasticsearch is a object-oriented Elasticsearch high-level client libraries collection for Java/JVM.
 
 
-Connectivity (clients)
+Connectivity
 --------------
 
 jElasticsearch simplifies Elasticsearch Java client API usage by providing predefined connectors (all implements common interface) with explicit methods to set them up (instead of builders and map-based settings). What is more, some Maven POMs excludes unused dependencies (e.g. Lucene libraries are not needed for ElasticsearchTransport and ElasticsearchNode) so that your final build will be lighter than using standard ES dependency.
 
 jElasticsearch provides predefined ways to work with Elasticsearch cluster:
-- **ElasticsearchTransport** - transport client, does not join the cluster, have less dependencies than other
-- **ElasticsearchNode** - node client, joins the cluster (fully aware of the cluster infrastructure) and works as a non-data node
-- **ElasticsearchDataNode** - node client, joins the cluster and works as a data node storing the data
+- **ElasticsearchTransport** - transport client, does not join the cluster and is not aware of infrastructure
+- **ElasticsearchNode** - node client, joins the cluster (fully aware of its infrastructure) and works as a non-data node
+- **ElasticsearchDataNode** - node that joins the cluster and stores the data
 - **ElasticsearchEmbedded** - data node with local (JVM class loader) discovery and transport, self-running service
 
 Every type of ES connectivity has its own Maven artifact to maintain dependencies properly.
+
+For connectivity to external data servers, use ElasticsearchTransport or ElasticsearchNode client. Read more about differences of them at: http://www.elasticsearch.org/guide/en/elasticsearch/client/java-api/current/client.html
 
 Import package:
 ```
@@ -83,7 +85,7 @@ Currently supported Elasticsearch version is: **1.1.1**
 ```XML
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
-    <artifactId>jelasticsearch-client-transport</artifactId>
+    <artifactId>jelasticsearch-connectors-transport</artifactId>
     <version>${elasticsearch.version}</version>
 </dependency>
 ```
@@ -92,7 +94,7 @@ Currently supported Elasticsearch version is: **1.1.1**
 ```XML
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
-    <artifactId>jelasticsearch-client-node</artifactId>
+    <artifactId>jelasticsearch-connectors-node</artifactId>
     <version>${elasticsearch.version}</version>
 </dependency>
 ```
@@ -101,7 +103,7 @@ Currently supported Elasticsearch version is: **1.1.1**
 ```XML
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
-    <artifactId>jelasticsearch-client-datanode</artifactId>
+    <artifactId>jelasticsearch-connectors-datanode</artifactId>
     <version>${elasticsearch.version}</version>
 </dependency>
 ```
@@ -110,7 +112,7 @@ Currently supported Elasticsearch version is: **1.1.1**
 ```XML
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
-    <artifactId>jelasticsearch-client-embedded</artifactId>
+    <artifactId>jelasticsearch-connectors-embedded</artifactId>
     <version>${elasticsearch.version}</version>
 </dependency>
 ```
