@@ -7,6 +7,8 @@ jElasticsearch is a object-oriented Elasticsearch high-level client libraries co
 Connectivity (clients)
 --------------
 
+jElasticsearch simplifies Elasticsearch Java client API usage by providing predefined connectors (all implements common interface) with explicit methods to set them up (instead of builders and map-based settings). What is more, some Maven POMs excludes unused dependencies (e.g. Lucene libraries are not needed for ElasticsearchTransport and ElasticsearchNode) so that your final build will be lighter than using standard ES dependency.
+
 jElasticsearch provides predefined ways to work with Elasticsearch cluster:
 - **ElasticsearchTransport** - transport client, does not join the cluster, have less dependencies than other
 - **ElasticsearchNode** - node client, joins the cluster (fully aware of the cluster infrastructure) and works as a non-data node
@@ -46,7 +48,6 @@ CreateIndexResponse response = request.execute().actionGet();
 es.close(); //close connection and release resources
 ```
 
-It simplifies Elasticsearch Java client API by providing connectors objects (all implements same ElasticsearchClientProvider interface) with methods to set up clients (instead of builders and map-based settings). What is more, ElasticSearchTransportClient Maven POM excludes all Lucene dependencies (which are not needed in this case) so that your final build will be lighter than using standard ES dependency.
 
 More about Elasticsearch Java API:
 http://www.elasticsearch.org/guide/en/elasticsearch/client/java-api/current/index.html
