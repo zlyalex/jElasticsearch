@@ -61,6 +61,17 @@ jElasticsearch will soon provide object-oriented JSON mappings builder.
 Maven
 --------------
 
+Maven repository location: **http://maven.sproutigy.com/**
+```XML
+    <repositories>
+        <repository>
+            <id>Sproutigy</id>
+            <name>Sproutigy Repository</name>
+            <url>http://maven.sproutigy.com/</url>
+        </repository>
+    </repositories>
+```
+
 Currently supported Elasticsearch version is: **1.1.1**
 ```XML
     <properties>
