@@ -7,10 +7,11 @@ jElasticsearch is a object-oriented Elasticsearch high-level client libraries co
 Connectivity (clients)
 --------------
 
-jElasticsearch provides predefined ways to work with Elasticsearch:
+jElasticsearch provides predefined ways to work with Elasticsearch cluster:
 - **ElasticsearchTransport** - transport client, does not join the cluster, have less dependencies than other
-- **ElasticsearchNode** - node client, joins the cluster and works as a node (with data storage or not)
-- **ElasticsearchEmbedded** - node with local (JVM class loader) discovery and transport
+- **ElasticsearchNode** - node client, joins the cluster (fully aware of the cluster infrastructure) and works as a non-data node
+- - **ElasticsearchDataNode** - node client, joins the cluster and works as a data node storing the data
+- **ElasticsearchEmbedded** - data node with local (JVM class loader) discovery and transport, self-running service
 
 Every type of ES connectivity has its own Maven artifact to maintain dependencies properly.
 
@@ -23,6 +24,7 @@ Use embedded engine:
 ```Java
 ElasticsearchEmbedded es = new ElasticsearchEmbedded();
 es.setPersistent(false); //keep documents in memory, do not store them
+es.setHttpEnabled(true); //listen for HTTP REST requests (disabled by default)
 ```
 
 or transport client:
@@ -79,6 +81,15 @@ Currently supported Elasticsearch version is: **1.1.1**
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
     <artifactId>jelasticsearch-client-node</artifactId>
+    <version>${elasticsearch.version}</version>
+</dependency>
+```
+
+- ElasticsearchDataNode:
+```XML
+<dependency>
+    <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+    <artifactId>jelasticsearch-client-datanode</artifactId>
     <version>${elasticsearch.version}</version>
 </dependency>
 ```
