@@ -11,9 +11,9 @@ jElasticsearch simplifies Elasticsearch Java client API usage by providing prede
 
 jElasticsearch provides predefined ways to work with Elasticsearch cluster:
 - **ElasticsearchTransport** - transport client, does not join the cluster and is not aware of infrastructure
-- **ElasticsearchNode** - node client, joins the cluster (fully aware of its infrastructure) and works as a non-data node
+- **ElasticsearchNode** - joins the cluster (fully aware of its infrastructure) and works as a non-data node
 - **ElasticsearchDataNode** - node that joins the cluster and stores the data
-- **ElasticsearchEmbedded** - data node with local (JVM class loader) discovery and transport, self-running service
+- **ElasticsearchEmbedded** - data node with local (JVM class loader) discovery and transport
 
 Every type of ES connectivity has its own Maven artifact to maintain dependencies properly.
 
@@ -27,7 +27,7 @@ import com.sproutigy.commons.jelasticsearch.connectors.*;
 Use embedded engine:
 ```Java
 ElasticsearchEmbedded es = new ElasticsearchEmbedded();
-es.setPersistent(false); //keep documents in memory, do not store them
+es.setPersistent(false); //keep index in memory, do not save to disk
 es.setHttpEnabled(true); //listen for HTTP REST requests (disabled by default)
 ```
 
