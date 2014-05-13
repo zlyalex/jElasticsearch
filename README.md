@@ -116,3 +116,12 @@ Currently supported Elasticsearch version is: **1.1.1**
     <version>${elasticsearch.version}</version>
 </dependency>
 ```
+
+- All-in-one:
+```XML
+<dependency>
+    <groupId>com.sproutigy.commons.jelasticsearch</groupId>
+    <artifactId>jelasticsearch-connectors-all</artifactId>
+    <version>${elasticsearch.version}</version>
+</dependency>
+```
