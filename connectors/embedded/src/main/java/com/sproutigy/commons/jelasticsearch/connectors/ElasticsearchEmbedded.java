@@ -11,6 +11,7 @@ import org.elasticsearch.node.NodeBuilder;
 public class ElasticsearchEmbedded extends ElasticsearchDataNode {
     public ElasticsearchEmbedded() {
         super();
+        setRandomClusterName();
     }
 
     public ElasticsearchEmbedded(boolean persistent) {
