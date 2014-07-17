@@ -74,19 +74,12 @@ Maven repository location: **http://maven.sproutigy.com/**
     </repositories>
 ```
 
-Currently supported Elasticsearch version is: **1.1.1**
-```XML
-    <properties>
-        <elasticsearch.version>1.1.1</elasticsearch.version>
-    </properties>
-```
-
 - ElasticsearchTransport:
 ```XML
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
     <artifactId>jelasticsearch-connectors-transport</artifactId>
-    <version>${elasticsearch.version}</version>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -95,7 +88,7 @@ Currently supported Elasticsearch version is: **1.1.1**
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
     <artifactId>jelasticsearch-connectors-node</artifactId>
-    <version>${elasticsearch.version}</version>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -104,7 +97,7 @@ Currently supported Elasticsearch version is: **1.1.1**
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
     <artifactId>jelasticsearch-connectors-datanode</artifactId>
-    <version>${elasticsearch.version}</version>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -113,7 +106,7 @@ Currently supported Elasticsearch version is: **1.1.1**
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
     <artifactId>jelasticsearch-connectors-embedded</artifactId>
-    <version>${elasticsearch.version}</version>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -122,6 +115,14 @@ Currently supported Elasticsearch version is: **1.1.1**
 <dependency>
     <groupId>com.sproutigy.commons.jelasticsearch</groupId>
     <artifactId>jelasticsearch-connectors-all</artifactId>
-    <version>${elasticsearch.version}</version>
+    <version>1.0-SNAPSHOT</version>
 </dependency>
+```
+
+Uses current RELEASE version of Elasticsearch - it will automatically update ES dependency whenever new version is available.
+This can be changed using this property setting:
+```XML
+    <properties>
+        <elasticsearch.version>1.1.1</elasticsearch.version>
+    </properties>
 ```
