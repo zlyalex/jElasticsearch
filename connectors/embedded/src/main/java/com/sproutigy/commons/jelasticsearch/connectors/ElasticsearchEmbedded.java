@@ -11,16 +11,30 @@ import org.elasticsearch.node.NodeBuilder;
 public class ElasticsearchEmbedded extends ElasticsearchDataNode {
     public ElasticsearchEmbedded() {
         super();
-        setRandomClusterName();
     }
 
     public ElasticsearchEmbedded(boolean persistent) {
         super(persistent);
     }
 
+    public ElasticsearchEmbedded(boolean persistent, boolean local) {
+        super(persistent);
+        this.local = local;
+    }
+
+    private boolean local = true;
+
+    public boolean isLocal() {
+        return local;
+    }
+
+    public void setLocal(boolean local) {
+        this.local = local;
+    }
+
     @Override
     protected void buildNode(NodeBuilder nodeBuilder) {
         super.buildNode(nodeBuilder);
-        nodeBuilder.local(true);
+        nodeBuilder.local(isLocal());
     }
 }
