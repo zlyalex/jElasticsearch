@@ -60,6 +60,12 @@ TODO
 jElasticsearch will soon provide object-oriented JSON mappings builder.
 
 
+FAQ
+--------------
+- **Use cases?** Typical use of ES as a search engine or database, integration tests (ElasticsearchEmbedded).
+- **Is production ready?** Internally it uses mechanisms recommended by ES and described in official documentation (except dependencies exclusion). So, it should run properly and we're using it in production, but there's absolutely no guarantee.
+- **License?** Apache, business-friendly.
+
 Maven
 --------------
 

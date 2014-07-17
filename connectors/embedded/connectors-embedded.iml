@@ -12,8 +12,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="connectors-datanode" />
-    <orderEntry type="library" name="Maven: com.sproutigy.commons.jelasticsearch:jelasticsearch-connectors-node:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: com.sproutigy.commons.jelasticsearch:jelasticsearch-connectors-core:1.1.1" level="project" />
+    <orderEntry type="module" module-name="connectors-node" />
+    <orderEntry type="module" module-name="connectors-core" />
     <orderEntry type="library" name="Maven: org.elasticsearch:elasticsearch:1.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:4.8.1" level="project" />
